@@ -1,0 +1,76 @@
+/* Estilos para centrar el formulario y hacerlo responsivo */
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+    background-color: #f4f4f4;
+}
+
+.register-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.register-form input,
+.register-form select,
+.register-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.register-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+.register-form p {
+    text-align: center;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 480px) {
+    .register-form {
+        padding: 16px;
+    }
+
+    .register-form h2 {
+        font-size: 1.5em;
+    }
+
+    .register-form input,
+    .register-form select,
+    .register-form button {
+        font-size: 14px;
+    }
+}

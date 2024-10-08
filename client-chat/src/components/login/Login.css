@@ -1,0 +1,74 @@
+/* Estilos para centrar el formulario de login y hacerlo responsivo */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+    background-color: #f4f4f4;
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.login-form p {
+    text-align: center;
+    color: #666;
+    margin-top: 8px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 480px) {
+    .login-form {
+        padding: 16px;
+    }
+
+    .login-form h2 {
+        font-size: 1.5em;
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 14px;
+    }
+}
